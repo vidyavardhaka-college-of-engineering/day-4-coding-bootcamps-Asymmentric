@@ -5,13 +5,27 @@
 
 int main()
 {
-    int arr[10], n, i;
+    int a[10], n, i;
     scanf("%d", &n);
 
     for(i = 0; i < n; i++)
-        scanf("%d", &arr[i]);
+        scanf("%d", &a[i]);
 
     //Write your code here
-  
+  int big,small;
+  big=0;
+  small=a[i];
+
+  for(int i=0;i<n;i++){
+    if(a[i]>=big){
+      big=a[i];
+    }
+    if(a[i]<=small){
+      small=a[i];
+    }
+  }
+
+  printf("Big->%d\n",big);
+  printf("small->%d",small);
     return 0;
 }

@@ -16,15 +16,24 @@ int main()
 {
    //Declare all the variables[N, array a & array b, i] used in the code
    int N;
-   scanf("%d",N);
-  int a[N];
+   scanf("%d",&N);
+  int a[N],b[N];
    //Read the Value of N using scanf statement
 
-   for(int i=0;i<N;i++){
-     scanf("%d",a[i]);
-   }
+   
    //Read the array elements using for loop and scanf statment
+   for(int i=0;i<N;i++){
+     scanf("%d",&a[i]);
+   }
    //Copy the elements of array 'a'[first array] to  array 'b'[second array] using for loop
+    for(int i=0;i<N;i++){
+      b[i]=a[i];
+     // printf("%d %d",a[i],b[i]);
+    }
    //Print the both array elements in using printf statement in the above specified format
+  for(int i=0;i<N;i++){
+    printf("%d\n ",a[i]);
+    printf("%d",b[i]);
+    }
    return 0; 
 }
