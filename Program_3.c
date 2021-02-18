@@ -12,6 +12,8 @@ int main()
   //Declare all the variables[row, col, array a(2D array), i] used in the code
   int row,coloumn=2;
 
+  
+
    //Read the Value of row and coloumn of the matrix (i.e size of matrix) using scanf statement
    scanf("%d",&row);
    //Read the elements of matrix a using nested for loop and scanf statment
