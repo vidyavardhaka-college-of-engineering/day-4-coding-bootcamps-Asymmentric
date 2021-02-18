@@ -13,7 +13,7 @@ int main()
 
     //Write your code here
   int big,small;
-  big=0;
+  big=0 ;
   small=a[i];
 
   for(int i=0;i<n;i++){
